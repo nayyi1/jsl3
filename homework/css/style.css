@@ -1,0 +1,466 @@
+*{
+	box-sizing: border-box;
+}
+
+
+body{
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.background{
+	background-image: url(../img/leaf.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	position: absolute;
+	top: -50px;
+	left: -50px;
+	bottom: -50px;
+	right: -50px;
+
+	filter: blur(20px);
+
+	z-index: -1;
+}
+
+.display{
+	font-size: 50px;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+.btn-nav{
+	padding: 10px 40px;
+	font-size: 20px;
+	margin-left: 15px;
+	font-family: sans-serif;
+	border: none;
+	background-color: #011c1c;
+	color: whitesmoke;
+}
+
+.btn:hover{
+	transform: scale(0.98);
+}
+
+.hide{
+	/*display: none;*/
+}
+
+/*Start navbar*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+.hide{
+	display: none;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Mulish', sans-serif;
+	color: #444;
+	height: 100vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	position: relative;
+
+	margin: 0;
+	overflow: hidden;
+}
+
+.logo{
+	width: 150px;
+}
+
+.text{
+	text-transform: uppercase;
+}
+
+.nav-btn{
+	background: transparent;
+	border: none;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.fa-bars{
+	color: #fff;
+}
+
+.open-btn{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+
+.nav{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	height: 100%;
+
+	transform: translateX(-100%);
+
+	transition: all 0.3s ease-in-out;
+}
+
+.nav.visible{
+	transform: translateX(0);
+}
+
+.nav-black{
+	width: 60%;
+	max-width: 480px;
+	min-width: 320px;
+	background: #000;
+
+	transition-delay: 0.4s;
+}
+.nav-black.visible{
+	transition-delay: 0s;
+}
+
+.nav-red{
+	width: 95%;
+	background: silver;
+
+	transition-delay: 0.2s;
+}
+.nav-red.visible{
+	transition-delay: 0.2s;
+}
+
+.nav-white{
+	width: 95%;
+	background: #011c1c;
+	padding: 40px;
+
+	position: relative;
+
+	transition-delay: 0s;
+}
+.nav-white.visible{
+	transition-delay: 0.4s;
+}
+
+.close-btn{
+	color: white;
+	position: absolute;
+	top:40px;
+	right: 30px;
+	opacity: 0.3;
+}
+
+.list{
+	list-style: none;
+	margin: 0;
+	padding: 50px;
+}
+
+.list ul{
+	list-style: none;
+	padding-left: 20px;
+}
+
+.list li{
+	margin: 20px 0;
+}
+
+.list li a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.todolist{
+	display: none;
+}
+
+/*End Navbar*/
+/*Start Todolist*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Mulish', sans-serif;
+    background-color: #f5f5f5;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0;
+    overflow: hidden;
+}
+form{
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-top: -100px;
+}
+form .input{
+    width: 100%;
+    border: 0;
+    font-size: 2rem;
+    color: #444;
+    padding: 1rem 2rem;
+
+
+}
+input:focus{
+    outline-color: #666;
+}
+.input::placeholder{
+    color: #666;
+}
+.todos{
+    background-color: #fff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.todos li{
+    font-size: 1.5rem;
+    border-top: 1px solid #e8ebdd;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+.todos li.completed{
+    color: #e8ebdd;
+    text-decoration: line-through;
+}
+p{
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+
+}
+
+/*End todolist*/
+
+/*Start Princing Section*/
+.pricing{
+	display: none;
+}
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+	min-height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 0;
+}
+
+.title{
+	margin-bottom: 20px;
+}
+.title h2{
+	font-size: 3rem;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.toggle-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Child Selector (>)*/
+.toggle-container > *{
+	margin: 0 3px;
+}
+
+.toggle{
+	visibility: hidden;
+}
+
+.label{
+	width: 40px;
+	height: 20px;
+	background: #d0d0d0;
+	border-radius: 50px;
+
+	margin: 0 15px;
+
+	cursor: pointer;
+	position: relative;
+}
+
+.toggle:checked + .label{
+	background-color: yellowgreen;
+}
+
+.ball{
+	width: 14px;
+	height: 14px;
+	background-color: #fff;
+	border-radius: 50%;
+
+	position: absolute;
+	top: 3px;
+	left: 3px;
+
+	animation: offani 0.3s linear forwards;
+}
+
+.toggle:checked + .label .ball{
+	animation-name: onani;
+	animation-duration: 0.3s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes onani{
+	0%{
+		transform: translate(0) scale(1);
+	}
+	50%{
+		transform: translate(10px) scale(1.2);
+
+	}
+	100%{
+		transform: translate(20px) scale(1);
+	}
+}
+
+@keyframes offani{
+	0%{
+		transform: translate(20px) scale(1);
+	}
+	50%{
+		transform: translate(10px) scale(1.2);
+
+	}
+	100%{
+		transform: translate(0px) scale(1);
+	}
+
+}
+
+
+.price-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.price-container .box {
+  padding: 2rem;
+}
+.price-box{
+	width: 25rem;
+	background-color: #fff;
+	border: 1px solid #f4f4f4;
+	border-bottom-right-radius: 175px;
+	border-bottom-left-radius: 175px;
+	border-top-right-radius: 175px;
+	border-top-left-radius: 175px;
+	box-shadow: 0 3px 10px rgba(26,56,127,0.13);
+	text-align: center;
+	padding-bottom: 3rem;
+	margin: 2rem 1.5rem;
+
+	overflow: hidden;
+
+	transition: all 0.5s;
+}
+.price-box p{
+	font-size: 1.8rem;
+	margin-bottom: 0rem;
+}
+
+.btn-1{
+	background: #999;
+}
+.price-box h5 span{
+	font-size: 1.3rem;
+	vertical-align: middle;
+}
+.price-box h5 span:nth-of-type(2){
+	font-size: 2.5rem;
+}
+.price-list ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 2.5rem;
+}
+.price-list ul li{
+	font-size: 1.2rem;
+	padding: 0.8rem 0;
+}
+
+
+.price-list a{
+	text-decoration: none;
+	background-color: tomato;
+	color: #fff;
+	font-size: 1.4rem;
+	padding: 0.8rem 3rem;
+	border-radius: 5px;
+
+	transition: all 0.3s ease;
+}
+.price-list a:hover{
+	font-size: 1.3rem;
+	color: #fff;
+}
+
+.box1,.btn1{
+	background: #000;
+	color: #fff;
+}
+.box2,.btn2{
+	background: #999;
+	color: #fff;
+}
+
+.box3,.btn3{
+	background: #000;
+	color: #fff;
+}
+
+.price-box:hover{
+	transform: scale(1.1);
+}
+
+@media (max-width: 800px){
+		.price-container{
+			flex-direction: column;
+		}
+		.price-box:nth-of-type(2){
+			transform: scale(1);
+		}
+}
+/*End Pricing Section*/
+
+
+
